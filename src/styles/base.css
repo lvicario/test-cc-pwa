@@ -1,0 +1,18 @@
+@layer base {
+    :root {
+        --primary: 96 161 55;
+        --primary-dark: 60 90 47; 
+        --primary-bright: 114 189 67; 
+    }
+
+    .tradenext  {
+        --primary: 252 101 101;
+        --primary-dark: 202 71 71;
+        --primary-bright: 255 133 133; 
+    }
+
+    /* Defaults */
+    /* a:hover {
+        @apply text-blue-900;
+    } */
+}
