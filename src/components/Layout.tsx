@@ -27,9 +27,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </Head>
             <Header />
             {!isDesktop && <HeaderLinks />}
-            <div className={`flex h-screen items-start transition-transform ease-in duration-300 ${sidebarClasses}`}>
+            <div className={`flex h-screen items-start transition-transform ease-in duration-300 text-gray-800 ${sidebarClasses}`}>
                 <Sidebar />
-                <main>{children}</main>
+                <main className="flex-1 py-5 px-5 font-light text-sm">{children}</main>
             </div>
         </>
     )
