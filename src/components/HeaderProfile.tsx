@@ -13,7 +13,7 @@ const HeaderProfile = () => {
     return (
         <DropdownMenu.Root>
             <DropdownMenu.Trigger asChild={true} className="text-white dropdown-profile">
-                <span className="flex gap-x-3 items-center px-10 h-full ml-10 text-sm border-l border-[#606164] hover:text-primary cursor-pointer">
+                <span className="flex gap-x-3 items-center px-10 h-24 md:h-full lg:ml-10 text-sm bg-[#232323] border-l border-[#606164] hover:text-primary cursor-pointer">
                     <Image src={personIcon} width="23" height="23" alt="" />
                     <span>Oshin Komre</span>
                     <Image src={arrowDownIcon} width="15" height="9" alt="" className="ml-2" />

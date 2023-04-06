@@ -17,7 +17,7 @@ const MainMenu = () => {
     const activeSvgClasses = "group-[.active]:w-8";
 
     return (
-        <div className="mt-10 text-white">
+        <div className="mt-14 text-white">
             <ActiveLink activeClassName={activeClasses} className={linkClasses} href="/dashboard">
                 <Image src={iconDashboard} width="31" height="24" alt="" />
                 <span>Dashboard</span>

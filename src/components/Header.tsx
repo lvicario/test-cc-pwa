@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         // TODO: fix BG color
         <section className="w-full h-24 md:h-20 lg:h-[90px] pl-7 flex gap-x-5 items-center justify-start bg-[#232323] relative group header">
             {isNotDesktop && (
-                <Image src={mobileMenu} className="w-6 h-auto cursor-pointer" width="24" height="19" alt="" onClick={toggleMenu} />
+                <Image src={mobileMenu} className="mobile-menu w-6 h-auto cursor-pointer" width="24" height="19" alt="" onClick={toggleMenu} />
             )}
             <div className={`flex ${isMobile ? "flex-col gap-1.5 flex-nowrap items-center w-full mr-10" : ""}`}>
                 <Link href="/">
