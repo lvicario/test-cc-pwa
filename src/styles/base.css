@@ -16,3 +16,10 @@
         @apply text-blue-900;
     } */
 }
+
+/* TEMPORARY: testing different background for PWA install app */
+@media all and (display-mode: standalone) {
+    body {
+        background-color: yellow;
+    }
+}
