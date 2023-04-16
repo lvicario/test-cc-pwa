@@ -2,13 +2,40 @@
     :root {
         --primary: 96 161 55;
         --primary-dark: 60 90 47; 
-        --primary-bright: 114 189 67; 
+        --primary-bright: 114 189 67;
+
+        --white: #fff;
+        --black: #000;
+
+        --primary-color-light: #f2f8ef;
+        --primary-color: #60a137;
+        --primary-color-darken: #47881e;
+
+        /* Buttons */
+        --btn-primary-color: var(--white);
+        --btn-primary-bg: var(--primary-color);
+        --btn-primary-border-color: var(--primary-color);
+        --btn-primary-hover-color: var(--white);
+        --btn-primary-hover-bg: var(--primary-color-darken);
+        --btn-primary-hover-border-color: var(--primary-color-darken);
     }
 
     .tradenext  {
         --primary: 252 101 101;
         --primary-dark: 202 71 71;
-        --primary-bright: 255 133 133; 
+        --primary-bright: 255 133 133;
+
+        --primary-color-light: #fff3f3;
+        --primary-color: #fc6565;
+        --primary-color-darken: #e15959;
+
+        /* Buttons */
+        --btn-primary-color: var(--white);
+        --btn-primary-bg: var(--primary-color);
+        --btn-primary-border-color: var(--primary-color);
+        --btn-primary-hover-color: var(--white);
+        --btn-primary-hover-bg: var(--primary-color-darken);
+        --btn-primary-hover-border-color: var(--primary-color-darken);
     }
 
     /* Defaults */

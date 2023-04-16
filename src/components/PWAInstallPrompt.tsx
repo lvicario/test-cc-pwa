@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Button } from './ui';
 
-const InstallPrompt = () => {
+const PWAInstallPrompt = () => {
     const [showPrompt, setShowPrompt] = useState(false);
     const [deferredPrompt, setDeferredPrompt] = useState<any>();
-    const buttonRef = useRef<any>();
 
     useEffect(() => {
         window.addEventListener('beforeinstallprompt', (e) => {
@@ -32,7 +32,7 @@ const InstallPrompt = () => {
           });
     }, []);
 
-    const handleClick = async () => {
+    const handleInstallClick = async () => {
         // Hide the app provided install promotion
         setShowPrompt(false);
 
@@ -50,15 +50,23 @@ const InstallPrompt = () => {
         setDeferredPrompt(null);
     };
 
+    const handleNotNowClick = () => {
+        setShowPrompt(false);
+    };
+
     if (!showPrompt) {
-        return (
-            <p>!showPrompt</p>
-        );
+        return null;
     }
 
     return (
-        <button type="button" onClick={handleClick}>Install</button>
+        <div className="mt-4 py-4 px-4 bg-white/60">
+            <p className="mb-3 text-sm">Get our free app. It won't take up space on your phone</p>
+            <p className="text-right">
+                <Button href="#" variant="btn-light" className="w-auto text-primary/75 hover:text-primary bg-transparent border-transparent hover:bg-transparent hover:border-transparent" onClick={handleNotNowClick}>Not now</Button>
+                <Button href="#" className="w-auto" onClick={handleInstallClick}>Install</Button>
+            </p>
+        </div>
     );
 };
 
-export default InstallPrompt;
+export default PWAInstallPrompt;
