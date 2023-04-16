@@ -4,6 +4,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import { useRef } from "react";
 import { useClickAway } from "react-use";
 import HeaderProfile from "./HeaderProfile";
+import PWAInstallPrompt from "./PWAInstallPrompt";
 
 const Sidebar: React.FC = () => {
     const sidebarRef = useRef(null);
@@ -25,6 +26,7 @@ const Sidebar: React.FC = () => {
         <section ref={sidebarRef} className={`flex flex-col w-[264px] h-full bg-primary z ${mobileClasses} ${mobileOpenClass}`}>
             {isMobile && <HeaderProfile />}
             <MainMenu />
+            <PWAInstallPrompt />
         </section>
     )
 }

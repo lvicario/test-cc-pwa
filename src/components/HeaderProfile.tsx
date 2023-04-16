@@ -14,9 +14,9 @@ const HeaderProfile = () => {
         <DropdownMenu.Root>
             <DropdownMenu.Trigger asChild={true} className="text-white dropdown-profile">
                 <span className="flex gap-x-3 items-center px-10 h-24 md:h-full lg:ml-10 text-sm bg-[#232323] border-l border-[#606164] hover:text-primary cursor-pointer">
-                    <Image src={personIcon} width="23" height="23" alt="" />
+                    <Image src={personIcon} width="23" height="23" alt="Profile" />
                     <span>Oshin Komre</span>
-                    <Image src={arrowDownIcon} width="15" height="9" alt="" className="ml-2" />
+                    <Image src={arrowDownIcon} width="15" height="9" alt="View more" className="ml-2" />
                 </span>
             </DropdownMenu.Trigger>
 
@@ -27,7 +27,7 @@ const HeaderProfile = () => {
                     <Link href="/double-conversion-claim-online-form" className={linkClasses}>Double Conversion Claim</Link>
                     <Link href="/logout" className={`flex justify-between items-center ${linkClasses}`}>
                         Logout
-                        <Image src={logoutIcon} width="22" height="27" alt="" />
+                        <Image src={logoutIcon} width="22" height="27" alt="Logout" />
                     </Link>
                 </DropdownMenu.Content>
             </DropdownMenu.Portal>

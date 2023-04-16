@@ -19,31 +19,31 @@ const MainMenu = () => {
     return (
         <div className="mt-14 text-white">
             <ActiveLink activeClassName={activeClasses} className={linkClasses} href="/dashboard">
-                <Image src={iconDashboard} width="31" height="24" alt="" />
+                <Image src={iconDashboard} width="31" height="24" alt="Dashboard" />
                 <span>Dashboard</span>
             </ActiveLink>
             <ActiveLink  activeClassName={activeClasses} className={linkClasses} href="/withdraw">
-                <Image src={iconWithdraw} width="29" height="30" alt="" />
+                <Image src={iconWithdraw} width="29" height="30" alt="Withdraw" />
                 <span>Withdraw</span>
             </ActiveLink>
             <ActiveLink  activeClassName={activeClasses} className={linkClasses} href="/deposit">
-                <Image src={iconDeposit} width="29" height="30" alt="" />
+                <Image src={iconDeposit} width="29" height="30" alt="Deposit" />
                 <span>Deposit</span>
             </ActiveLink>
             <ActiveLink  activeClassName={activeClasses} className={linkClasses} href="/refer-a-friend">
-                <Image src={iconReferFried} width="29" height="24" alt="" />
+                <Image src={iconReferFried} width="29" height="24" alt="Refer a Friend" />
                 <span>Refer a Friend</span>
             </ActiveLink>
             <ActiveLink  activeClassName={activeClasses} className={linkClasses} href="/vps-details">
-                <Image src={iconVpsDetails} width="31" height="27" alt="" />
+                <Image src={iconVpsDetails} width="31" height="27" alt="VPS Details" />
                 <span>VPS Details</span>
             </ActiveLink>
             <ActiveLink  activeClassName={activeClasses} className={linkClasses} href="/trading-central">
-                <Image src={iconTradingCentral} width="28" height="29" alt="" />
+                <Image src={iconTradingCentral} width="28" height="29" alt="Trading Central" />
                 <span>Trading Central</span>
             </ActiveLink>
             <ActiveLink  activeClassName={activeClasses} className={linkClasses} href="/promotion">
-                <Image src={iconPromotion} width="23" height="23" alt="" />
+                <Image src={iconPromotion} width="23" height="23" alt="Promotions" />
                 <span>Promotions</span>
             </ActiveLink>
         </div>

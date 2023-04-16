@@ -10,7 +10,7 @@ const HeaderPortal = () => {
         <DropdownMenu.Root>
             <DropdownMenu.Trigger className="flex gap-x-5 items-center px-6 py-3 rounded-t-[20px] rounded-b-[20px] data-[state=open]:rounded-b-none bg-[#2d2d2d] text-white text-xs">
                 <span>Client Cabinet</span>
-                <Image src={arrowDownIcon} width="15" height="9" alt="" />
+                <Image src={arrowDownIcon} width="15" height="9" alt="Arrow" />
             </DropdownMenu.Trigger>
 
             <DropdownMenu.Portal>

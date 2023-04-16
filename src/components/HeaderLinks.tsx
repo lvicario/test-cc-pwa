@@ -12,11 +12,11 @@ const HeaderLinks = () => {
     return (
         <div className={`flex gap-x-5 md:gap-x-8 justify-center text-white text-xs md:text-sm ${positioningClasses}`}>
             <Link href="https://titanfx.zendesk.com/hc/en-us" target="_blank" className="flex items-center gap-x-2 hover:text-primary">
-                <Image src={helpIcon} width="23" height="23" alt="" />
+                <Image src={helpIcon} width="23" height="23" alt="Help" />
                 <span>Help</span>
             </Link>
             <Link href="https://titanfx.com/contact-titan-fx" target="_blank" className="flex items-center gap-x-2 hover:text-primary">
-                <Image src={contactIcon} width="23" height="23" alt="" />
+                <Image src={contactIcon} width="23" height="23" alt="Contact" />
                 <span>Contact</span>
             </Link>
         </div>
