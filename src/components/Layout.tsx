@@ -3,9 +3,6 @@ import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import HeaderLinks from './HeaderLinks';
-import { useUser } from '@auth0/nextjs-auth0/client';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -13,18 +10,6 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     const { isDesktop } = useMediaQuery();
-    const { user, isLoading } = useUser();
-    const router = useRouter();
-
-    useEffect(() => {
-      if (!isLoading && !user) {
-        router.push('/api/auth/login');
-      }
-    }, [isLoading, user, router]);
-  
-    if (isLoading || !user) {
-      return <p>Loading...</p>;
-    }
 
     return (
         <>
