@@ -26,7 +26,7 @@ const Sidebar: React.FC = () => {
         <section ref={sidebarRef} className={`flex flex-col w-[264px] h-full bg-primary z ${mobileClasses} ${mobileOpenClass}`}>
             {isMobile && <HeaderProfile />}
             <MainMenu />
-            {/* <PWAInstallPrompt /> */}
+            <PWAInstallPrompt />
         </section>
     )
 }
