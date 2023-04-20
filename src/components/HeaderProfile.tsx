@@ -6,9 +6,18 @@ import Link from 'next/link';
 import personIcon from "@/assets/img/icons/person.svg";
 import logoutIcon from "@/assets/img/icons/logout.svg";
 import arrowDownIcon from "@/assets/img/icons/arrow-down.svg";
+import axios from 'axios';
+import { useRouter } from 'next/router';
 
 const HeaderProfile = () => {
+    const router = useRouter();
+
     const linkClasses = "block pl-10 pr-7 py-3 hover:bg-[#2d2d2d] text-sm";
+
+    const handleLogout = (event: any) => {
+        event.preventDefault();
+        router.push("/api/auth/logout");
+    };
 
     return (
         <DropdownMenu.Root>
@@ -25,7 +34,7 @@ const HeaderProfile = () => {
                     <Link href="/profile" className={linkClasses}>Profile</Link>
                     <Link href="/settings" className={linkClasses}>Settings</Link>
                     <Link href="/double-conversion-claim-online-form" className={linkClasses}>Double Conversion Claim</Link>
-                    <Link href="/logout" className={`flex justify-between items-center ${linkClasses}`}>
+                    <Link href="/" onClick={handleLogout} className={`flex justify-between items-center ${linkClasses}`}>
                         Logout
                         <Image src={logoutIcon} width="22" height="27" alt="Logout" />
                     </Link>
